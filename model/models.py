@@ -63,7 +63,7 @@ class GMS(torch.nn.Module):
 
         self.agg = Combineall(self.filters_3)
 
-        self.mlp = MLPModule(self.filters_3 * 3)
+        self.mlp = MLPModule(self.filters_3 * 2)
 
     def forward(self, data):
 
